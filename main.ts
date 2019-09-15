@@ -1,4 +1,4 @@
-//% weight=0 color=#2244DE icon="\uf0ad"
+//% weight=0 color=#2284DE icon="\uf0ad"
 namespace nodemcutomicrobit {
       export enum analogpin {
         A0 = 0
