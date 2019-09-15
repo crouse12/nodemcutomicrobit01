@@ -84,13 +84,21 @@ namespace nodemcutomicrobit {
         }
     }
     //% group="2.Communication" 
-    //% blockId=node_Readfromnodemcu block="Read data from Http"
+    //% blockId=node_Readfromnodemcu block="Read data via Http"
     //% weight=101
     //% blockExternalInputs = 1
     export function node_Readfromnodemcu():string {      
     let a = serial.readUntil(serial.delimiters(Delimiters.NewLine))
     a = a.substr(0, a.length - 1)
     return a
+    }
+      
+    //% group="2.Communication" 
+    //% blockId=node_Sendtonodemcu block="Send data via Http"
+    //% weight=101
+    //% blockExternalInputs = 1
+    export function node_Sendtonodemcu() {      
+         serial.writeLine("setwifi="+ssid1+","+pass1+","+mode2+",1\\n")
     }
             
 }
