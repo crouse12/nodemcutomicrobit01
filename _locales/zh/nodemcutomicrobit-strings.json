@@ -1,5 +1,6 @@
 {
     "nodemcutomicrobit|block": "控制nodemcu",
     "nodemcutomicrobit.node_setMicrobit|block": "設定Microbit |TX %tx|RX %rx|baudrate %baudrate",
-    "nodemcutomicrobit.node_setWiFi|block": "設定Nodemcu的WiFi | SSID %SSID| Pass %PASS| Mode %mode1"
+    "nodemcutomicrobit.node_setWiFi|block": "設定Nodemcu的WiFi | SSID %SSID| Pass %PASS| Mode %mode1",
+    "nodemcutomicrobit.node_Readfromnodemcu|block": "讀取nodemcu傳過來的資料"
 }
