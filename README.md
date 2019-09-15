@@ -1,6 +1,6 @@
 # MicrobittoNodemcu
 
-Micro:Bit控制Nodemcu積木
+Nodemcu控制Microbit積木
 
 ## License
 
@@ -12,5 +12,5 @@ MIT
 (The metadata above is needed for package search.)
 
 ```package
-microbittonodemcu=github:crouse12/microbittonodemcu
+nodemcutomicrobit=github:crouse12/nodemcutomicrobit
 ```
