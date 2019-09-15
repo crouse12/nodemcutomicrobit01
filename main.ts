@@ -46,7 +46,7 @@ namespace nodemcutomicrobit {
         STA = 1,
         AP = 0
      }
-      
+    //% group="1.Setup"  
     //% blockId=setMicrobit block="Initialize Microbit |TX %tx|RX %rx|Baud rate %baudrate "
     //% tx.defl=SerialPin.P0
     //% rx.defl=SerialPin.P1
@@ -60,7 +60,7 @@ namespace nodemcutomicrobit {
         )
         basic.pause(1000)
     }
-
+    //% group="1.Setup" 
     //% blockId=setWiFi block="Set Nodemcu | SSID %SSID| Pass %PASS| Mode %mode1 "
     //% weight=101
     //% blockExternalInputs = 1
@@ -82,6 +82,15 @@ namespace nodemcutomicrobit {
             }
             iii=iii+1
         }
-    }  
+    }
+    //% group="2.Communication" 
+    //% blockId=node_Readfromnodemcu block="Read from nodemcu"
+    //% weight=101
+    //% blockExternalInputs = 1
+    export function node_Readfromnodemcu() {      
+    let a = serial.readUntil(serial.delimiters(Delimiters.NewLine))
+    a = a.substr(0, a.length - 1)
+    return a
+    }
       
 }
