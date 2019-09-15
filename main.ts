@@ -84,13 +84,13 @@ namespace nodemcutomicrobit {
         }
     }
     //% group="2.Communication" 
-    //% blockId=node_Readfromnodemcu block="Read from nodemcu"
+    //% blockId=node_Readfromnodemcu block="Read data from Http"
     //% weight=101
     //% blockExternalInputs = 1
-    export function node_Readfromnodemcu() {      
+    export function node_Readfromnodemcu():string {      
     let a = serial.readUntil(serial.delimiters(Delimiters.NewLine))
     a = a.substr(0, a.length - 1)
     return a
     }
-      
+            
 }
