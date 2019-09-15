@@ -52,7 +52,7 @@ namespace nodemcutomicrobit {
     //% rx.defl=SerialPin.P1
     //% weight=101
     //% blockExternalInputs = 1
-    export function setMicrobit(tx: SerialPin, rx: SerialPin, baudrate: BaudRate) {
+    export function node_setMicrobit(tx: SerialPin, rx: SerialPin, baudrate: BaudRate) {
         serial.redirect(
             tx,
             rx,
@@ -64,7 +64,7 @@ namespace nodemcutomicrobit {
     //% blockId=setWiFi block="Set Nodemcu | SSID %SSID| Pass %PASS| Mode %mode1 "
     //% weight=101
     //% blockExternalInputs = 1
-    export function setWiFi(SSID: string, PASS: string, mode1: mode) {
+    export function node_setWiFi(SSID: string, PASS: string, mode1: mode) {
         ssid1=SSID
         pass1=PASS
         mode2=mode1
