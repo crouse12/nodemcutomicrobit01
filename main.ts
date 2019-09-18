@@ -94,11 +94,11 @@ namespace nodemcutomicrobit {
     }
       
     //% group="2.Communication" 
-    //% blockId=node_Sendtonodemcu block="Send data via Http"
+    //% blockId=node_Sendtonodemcu block="Send data %data via Http"
     //% weight=101
     //% blockExternalInputs = 1
-    export function node_Sendtonodemcu() {      
-         serial.writeLine("setwifi="+ssid1+","+pass1+","+mode2+",1\\n")
+    export function node_Sendtonodemcu(data: string) {      
+         serial.writeLine("httpclientget2=,,,,"+data+"\\n")
     }
             
 }
